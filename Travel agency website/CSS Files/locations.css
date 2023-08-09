@@ -1,0 +1,352 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", "AkbalthomNaga", "Work Sans", "Helvetica Neue", Arial,
+    sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --web-color: orange;
+}
+
+p::selection {
+  color: var(--web-color);
+  background-color: orange;
+}
+
+.body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: hidden;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: whitesmoke;
+  z-index: 20;
+}
+
+nav .logo {
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--web-color);
+}
+
+nav li {
+  list-style-image: url("../Web_Photoes/1141288.jpg");
+  font-size: 18px;
+  width: 100px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--web-color);
+  cursor: pointer;
+}
+
+nav .button-section {
+  margin-right: 10px;
+  width: 200px;
+  height: auto;
+}
+nav .button-section button {
+  width: 80px;
+  height: 35px;
+  background-color: orange;
+  border: 0;
+  font-size: 15px;
+}
+
+#get-started {
+  width: 110px;
+  border: 0;
+  margin-right: 0;
+  background-color: transparent;
+}
+
+.settingbtn {
+  display: none;
+  cursor: pointer;
+}
+
+.settingbtn div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  nav ul {
+    width: 40%;
+  }
+  nav ul li {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .settingbtn {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    transform: translateX(250%);
+  }
+
+  nav .button-section button {
+    width: 120px;
+    height: 35px;
+    background-color: orange;
+    border: 0;
+    font-size: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  nav .button-section {
+    width: 250px;
+  }
+  #get-started {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .settingbtn {
+    display: block;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  nav ul {
+    z-index: 5;
+    position: absolute;
+    right: 0px;
+    top: 10vh;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 88vh;
+    background-color: white;
+    flex-direction: column;
+    transition: 0.4s;
+  }
+  nav ul li {
+    font-size: 25px;
+
+    width: 145px;
+    height: 50px;
+    background-color: transparent;
+    color: var(--web-color);
+  }
+}
+
+.settingbtnclicked {
+  transform: translateX(0%);
+}
+
+
+
+.section {
+  width: 100%;
+  height: auto;
+  background-color: blue;
+}
+
+.wrapper {
+  height: 300px;
+  width: 90%;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+
+.location {
+  min-width: 430px;
+  height: 250px;
+  margin: 0px 0px 0px 10px;
+  display: flex;
+  background-color: whitesmoke;
+  border-radius: 10px;
+
+}
+
+.location::-webkit-scrollbar {
+  display: none;
+  background-color: aqua;
+}
+
+
+
+.location1 .left-section{
+  background-image: url("../Web_Photoes/Top-10-of-the-most-beautiful-places-to-visit-in-Vietnam.jpg"); 
+}
+
+.location2 .left-section{
+  background-image: url("../Web_Photoes/Orogold-8-travel-tips-if-youre-visiting-South-America-Machu-Picchu.jpg")
+}
+
+.location3 .left-section{
+  background-image: url("../Web_Photoes/Egypt-desert.jpg");
+}
+.location4 .left-section{
+  background-image: url("../Web_Photoes/world-top-rated-tourist-attractions-chichen-itza-mexico.jpg");
+}
+
+.location5 .left-section{
+  background-image: url("../Web_Photoes/Plitvice-Lakes-Croatia-GettyImages-1080935866.webp");
+}
+
+
+.location6 .left-section{
+  background-image: url("../Web_Photoes/5d3878bb36e03c348c7cfcd6.webp ");
+}
+
+
+
+
+
+
+
+
+
+
+/* .location1 {
+  background-image: url("../Web_Photoes/Top-10-of-the-most-beautiful-places-to-visit-in-Vietnam.jpg");
+}
+.location2 {
+  background-image: url("../Web_Photoes/Orogold-8-travel-tips-if-youre-visiting-South-America-Machu-Picchu.jpg");
+}
+.location3 {
+  background-image: url("../Web_Photoes/Egypt-desert.jpg");
+}
+.location4 {
+  background-image: url("../Web_Photoes/world-top-rated-tourist-attractions-chichen-itza-mexico.jpg");
+}
+.location5 {
+  background-image: url("../Web_Photoes/Plitvice-Lakes-Croatia-GettyImages-1080935866.webp");
+}
+.location6 {
+  background-image: url("../Web_Photoes/5d3878bb36e03c348c7cfcd6.webp");
+} */
+.left-section {
+  width: 45%;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+  background-position: center;
+  background-size: cover;
+}
+
+.right-section {
+  width: 55%;
+  height: 100%;
+  
+}
+.location-name {
+  width: 100%;
+  height: 40px;
+  padding-left: 15px;
+}
+
+.location-description {
+  
+  
+  padding-left: 15px;
+  width: 100%;
+  height: 110px;
+  overflow: hidden;
+}
+.location-rating {
+  padding-left: 15px;
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+}
+.location-btn {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.location-btn .btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location-btn button {
+  height: 40px;
+  width: 90px;
+  border: 0;
+  font-size: 16px;
+  background-color: gainsboro;
+  border-radius: 60px;
+}
+.location-btn i {
+  font-size: 20px;
+}
+
+
+
+
+.all-locations-section{
+  
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  place-items: center;
+  
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  margin-top: 20px;
+  background-color: aquamarine;
+}
+
+
+
+
+.all-locations-section .location{
+  width: 90%;
+  height: 300px;
+  background-color: white;
+  margin: 20px;
+  
+  border: 2px solid green;
+
+  
+}
+
+@media screen and (max-width: 850px) {
+  .all-locations-section .location{
+    background-color: rebeccapurple;
+    width: 300px;
+
+
+
+  }
+  
+  
+}
