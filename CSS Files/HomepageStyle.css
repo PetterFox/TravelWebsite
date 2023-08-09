@@ -221,7 +221,7 @@ nav .button-section button {
   background-position: center;
   background-size: cover;
   box-sizing: border-box;
-  background-image: url("../Web_Photoes/London.jpg");
+  background-image: url("Web_Photoes/London.jpg");
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -445,13 +445,13 @@ nav .button-section button {
 }
 
 .special1 .left-section {
-  background: url("../Web_Photoes/5d3878bb36e03c348c7cfcd6.webp");
+  background: url("Web_Photoes/5d3878bb36e03c348c7cfcd6.webp");
 }
 .special2 .left-section {
-  background: url("../Web_Photoes/London.jpg");
+  background: url("Web_Photoes/London.jpg");
 }
 .special3 .left-section {
-  background: url("../Web_Photoes/New York.webp");
+  background: url("Web_Photoes/New York.webp");
 }
 
 @media screen and (max-width: 530px) {
